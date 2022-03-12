@@ -1,5 +1,12 @@
+
+import logging
+import os
+import config
+from api import api
+
 from flask import Flask
 
+from models import db
 logging.basicConfig(level=logging.DEBUG,
                    format='[%(asctime)s]: {} %(levelname)s %(message)s'.format(os.getpid()),
                    datefmt='%Y-%m-%d %H:%M:%S',
